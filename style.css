@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+/* Header / Navbar */
+header {
+  background: #80004f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcccb;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #03323a;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Hero / Home */
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, #800000, #a52a2a);
+  color: white;
+  padding: 5rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+#about {
+  text-align: center;
+}
+
+.profile-pic {
+  display: block;
+  margin: 20px auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #800000;
+  object-fit: cover;
+}
+
+/* Skills Section */
+#skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+#skills li {
+  background: #f2f2f2;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+#skills li:hover {
+  transform: scale(1.05);
+  background: #ffe6e6;
+}
+
+/* Projects Section */
+.project {
+  background: #f2f2f2;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  background: #fff0f0;
+}
+
+.project h3 {
+  color: #800000;
+  margin-bottom: 0.5rem;
+}
+
+/* Portfolio Website Section */
+#portfolio {
+  text-align: center;
+}
+
+#portfolio a {
+  color: #800000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#portfolio a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background: #008026;
+  color: white;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #a00000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
